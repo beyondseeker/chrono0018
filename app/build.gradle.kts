@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-android-extensions")
+    kotlin("kapt")
 }
 
 android {
@@ -38,4 +39,6 @@ dependencies {
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test.ext:junit:1.1.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+
+    implementation("com.objectfanatics:commons-android:0.0.2-SNAPSHOT")
 }
